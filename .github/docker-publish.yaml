@@ -9,15 +9,15 @@ on:
   # schedule:
   #   - cron: '0 0 1 * *'
   push:
-    branches: [ master ]
+    branches: [ main ]
   #   # Publish semver tags as releases.
-  #   tags: [ 'v*.*.*' ]
+  # tags: [ 'v*.*.*' ]
   # pull_request:
   #   branches: [ main ]
 
 env:
   # github.repository as <account>/<repo>
-  IMAGE_NAME: android-sdk
+  IMAGE_NAME: grafana
 
 jobs:
   build:
