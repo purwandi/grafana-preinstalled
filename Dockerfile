@@ -9,7 +9,6 @@ ENV GF_PLUGIN_RENDERING_CHROME_BIN="/usr/bin/chrome"
 USER root
 
 RUN apk add --no-cache curl
-COPY certs/* /usr/local/share/ca-certificates
 
 RUN update-ca-certificates && \
     mkdir -p "$GF_PATHS_PLUGINS" && \
