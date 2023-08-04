@@ -40,17 +40,17 @@ RUN if [ $GF_INSTALL_IMAGE_RENDERER_PLUGIN = "true" ]; then \
 
 ARG GF_INSTALL_PLUGINS=""
 
-RUN grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install boazreicher-mosaicplot-panel \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install farski-blendstat-panel \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install grafana-polystat-panel \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install grafana-oncall-app \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install grafana-sentry-datasource \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install grafana-singlestat-panel \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install hamedkarbasi93-kafka-datasource \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install isovalent-hubble-datasource \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install marcusolsson-hexmap-panel \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install nikosc-percenttrend-panel \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install novatec-sdg-panel \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install orchestracities-iconstat-panel \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install timomyl-breadcrumb-panel \
+RUN grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install boazreicher-mosaicplot-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install farski-blendstat-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install grafana-polystat-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install grafana-oncall-app && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install grafana-sentry-datasource && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install grafana-singlestat-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install hamedkarbasi93-kafka-datasource && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install isovalent-hubble-datasource && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install marcusolsson-hexmap-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install nikosc-percenttrend-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install novatec-sdg-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install orchestracities-iconstat-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install timomyl-breadcrumb-panel && \
     grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install volkovlabs-image-panel
