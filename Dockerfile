@@ -1,4 +1,4 @@
-FROM grafana/grafana:10.0.3
+FROM grafana/grafana:10.1.5
 
 ARG GF_INSTALL_IMAGE_RENDERER_PLUGIN="truee"
 
@@ -53,4 +53,5 @@ RUN grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install boazreicher-m
     grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install novatec-sdg-panel && \
     grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install orchestracities-iconstat-panel && \
     grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install timomyl-breadcrumb-panel && \
-    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install volkovlabs-image-panel
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install volkovlabs-image-panel && \
+    grafana cli --pluginsDir "${GF_PATHS_PLUGINS}" plugins install marcusolsson-json-datasource
