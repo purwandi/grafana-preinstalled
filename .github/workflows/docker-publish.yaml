@@ -39,5 +39,5 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: purwandi/${{ env.IMAGE_NAME }}:10.1.5
+          tags: purwandi/${{ env.IMAGE_NAME }}:10.2.1
           labels: ${{ steps.meta.outputs.labels }}
